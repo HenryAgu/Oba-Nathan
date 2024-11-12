@@ -29,7 +29,7 @@ const calligraffitti = Calligraffitti({
 
 export const metadata: Metadata = {
   title: "Oba Nathan | Capturing Moments",
-  description: "Explore the portfolio of John Doe, a professional photographer specializing in capturing stunning landscapes, portraits, and event photography. Book your session today!",
+  description: "Explore the portfolio of Oba Nathan, a professional photographer specializing in capturing stunning landscapes, portraits, and event photography. Book your session today!",
 };
 
 
