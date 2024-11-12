@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        sorts: ['var(--font-sorts-milly-goudy)', 'serif'],
+        calligraffitti: ['var(--font-calligraffitti)', 'cursive'],
+      }
     },
   },
   plugins: [],
