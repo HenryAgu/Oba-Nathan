@@ -4,7 +4,7 @@ import { FaXTwitter, FaFacebook, FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between py-14">
+    <div className="flex justify-between px-2 py-14">
       <div className="w-full">
         <h5>OBA NATHAN</h5>
       </div>

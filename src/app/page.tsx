@@ -149,8 +149,8 @@ export default function Home() {
 
       {/* Small screen version */}
       <section className="flex flex-col gap-y-2 md:hidden lg:hidden xl:hidden w-full px-2 pb-24">
-        {imageCategories.map((category) => (
-          <Link href={category.path}>
+        {imageCategories.map((category,index) => (
+          <Link href={category.path} key={index}>
             <div
               className={`flex items-center justify-center drop-shadow-md grayscale bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out`}
               style={{ backgroundImage: `url(${category.cover})` }}
