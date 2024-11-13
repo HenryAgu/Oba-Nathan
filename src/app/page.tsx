@@ -178,7 +178,7 @@ export default function Home() {
         <div className="basis-[50%] flex flex-col gap-y-4 text-center">
           <p className="font-[calligraffitti] font-bold text-4xl">
             Hey there! I'm Nathan
-          </p>{" "}
+          </p>
           <h5 className="font-vogue text-base">YOUR FAV PHOTOGRAPHER</h5>
           <p className="font-[sorts] text-base">
             Capturing life's moments, one frame at a time. Let me tell your
