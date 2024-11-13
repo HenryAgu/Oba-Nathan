@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../../components/Footer";
 
 export default function Home() {
-  
   const imageCategories = [
     {
       title: "Portraits",
@@ -94,15 +94,17 @@ export default function Home() {
         <div className="flex gap-2">
           <Link href="" className="md:basis-[60%] xl:basis-[65%]">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
-                Lifestyle
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
+                Portraits
               </p>
             </div>
           </Link>
           <Link href="" className="md:basis-[40%] xl:basis-[35%]">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
-                Lifestyle
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
+                Events
               </p>
             </div>
           </Link>
@@ -110,15 +112,17 @@ export default function Home() {
         <div className="flex gap-2">
           <Link href="" className="md:basis-[40%] basis-[35%]">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
-                Lifestyle
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
+                Headshots
               </p>
             </div>
           </Link>
           <Link href="" className="md:basis-[60%] basis-[65%]">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
-                Lifestyle
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
+                Conferences
               </p>
             </div>
           </Link>
@@ -126,15 +130,17 @@ export default function Home() {
         <div className="flex gap-2">
           <Link href="" className="md:basis-[60%] basis-[65%]">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Lifestyle
               </p>
             </div>
           </Link>
           <Link href="" className="md:basis-[40%] basis-[35%]">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
-                Lifestyle
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
+                Weddings
               </p>
             </div>
           </Link>
@@ -149,13 +155,45 @@ export default function Home() {
               className={`flex items-center justify-center drop-shadow-md grayscale bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out`}
               style={{ backgroundImage: `url(${category.cover})` }}
             >
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
+              <div className="absolute inset-0 bg-black/30"></div>
+              <p className="font-vogue uppercase text-white text-xl font-semibold tracking-widest">
                 {category.title}
               </p>
             </div>
           </Link>
         ))}
       </section>
+
+      {/* About Me */}
+      <section className="flex flex-col md:flex-row xl:flex-row items-center gap-y-8 md:gap-x-8 xl:gap-x-8 pb-24 w-full md:11/12 xl:w-4/5 mx-auto">
+        <div className="basis-[50%]">
+          <Image
+            src="/images/me.webp"
+            alt="me"
+            width={850}
+            height={1000}
+            className="object-contain aspect-[850/1000] grayscale hover:grayscale-0 transition duration-300 ease-in-out"
+          />
+        </div>
+        <div className="basis-[50%] flex flex-col gap-y-4 text-center">
+          <p className="font-[calligraffitti] font-bold text-4xl">
+            Hey there! I'm Nathan
+          </p>{" "}
+          <h5 className="font-vogue text-base">YOUR FAV PHOTOGRAPHER</h5>
+          <p className="font-[sorts] text-base">
+            Capturing life's moments, one frame at a time. Let me tell your
+            story through the lens, turning the ordinary into the extraordinary.
+            Ready to create something unforgettable? Let's connect and make
+            magic happen!
+          </p>
+          <Link href="tel:+2349091748665">
+            <button className="border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider">
+              GET IN TOUCH
+            </button>
+          </Link>
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 }

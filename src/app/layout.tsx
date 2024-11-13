@@ -3,23 +3,11 @@ import localFont from "next/font/local";
 import { Sorts_Mill_Goudy, Calligraffitti } from "next/font/google";
 import "./globals.css";
 
-const urwBold = localFont({
-  src: "./fonts/URWClassico-Bold.ttf",
-  variable: "--font-urw-bold",
-  weight: "100 900",
-});
-
 const vogue = localFont({
   src: "./fonts/Vogue.ttf",
   variable: "--font-vogue",
   weight: "100 900",
 })
-
-const urwRegular = localFont({
-  src: "./fonts/URWClassico-Regular.ttf",
-  variable: "--font-urw-regular",
-  weight: "100 400 900",
-});
 
 const sortsMillyGoudy = Sorts_Mill_Goudy({
   subsets: ["latin"],
@@ -47,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sortsMillyGoudy.variable} ${vogue.variable} ${calligraffitti.variable} ${urwBold.variable} ${urwRegular.variable} antialiased`}
+        className={`${sortsMillyGoudy.variable} ${vogue.variable} ${calligraffitti.variable} antialiased`}
       >
         {children}
       </body>
