@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Small screen version */}
-      <section className="flex flex-col gap-y-2 md:hidden lg:hidden xl:hidden w-full pb-24">
+      <section className="flex flex-col gap-y-2 md:hidden lg:hidden xl:hidden w-full px-2 pb-24">
         <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
           <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
