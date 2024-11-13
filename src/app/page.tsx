@@ -41,37 +41,37 @@ export default function Home() {
       {/* Big screen version */}
       <section className="hidden xl:flex flex-col gap-y-2 pb-24">
         <div className="flex gap-2">
-          <div className="basis-[65%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+          <div className="basis-[65%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
               Lifestyle
             </p>
           </div>
-          <div className="basis-[35%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
-              Lifestyle
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-2">
-          <div className="basis-[35%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
-              Lifestyle
-            </p>
-          </div>
-          <div className="basis-[65%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+          <div className="basis-[35%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
               Lifestyle
             </p>
           </div>
         </div>
         <div className="flex gap-2">
-          <div className="basis-[65%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+          <div className="basis-[35%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
               Lifestyle
             </p>
           </div>
-          <div className="basis-[35%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+          <div className="basis-[65%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
+              Lifestyle
+            </p>
+          </div>
+        </div>
+        <div className="flex gap-2">
+          <div className="basis-[65%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
+              Lifestyle
+            </p>
+          </div>
+          <div className="basis-[35%] flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
               Lifestyle
             </p>
           </div>
@@ -80,33 +80,33 @@ export default function Home() {
 
       {/* Small screen version */}
       <section className="flex flex-col gap-y-2  xl:hidden w-full pb-24">
-        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
-          <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
+          <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
           </p>
         </div>
-        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
-          <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
+          <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
           </p>
         </div>
-        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
-          <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
+          <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
           </p>
         </div>
-        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
-          <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
+          <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
           </p>
         </div>
-        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
-          <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
+          <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
           </p>
         </div>
-        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.jpg')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
-          <p className="font-sorts uppercase text-xl font-semibold tracking-widest">
+        <div className="flex items-center justify-center drop-shadow-md grayscale bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out">
+          <p className="font-vogue uppercase text-xl font-semibold tracking-widest">
             Lifestyle
           </p>
         </div>
