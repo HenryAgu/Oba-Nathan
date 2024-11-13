@@ -9,6 +9,12 @@ const urwBold = localFont({
   weight: "100 900",
 });
 
+const vogue = localFont({
+  src: "./fonts/Vogue.ttf",
+  variable: "--font-vogue",
+  weight: "100 900",
+})
+
 const urwRegular = localFont({
   src: "./fonts/URWClassico-Regular.ttf",
   variable: "--font-urw-regular",
@@ -41,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sortsMillyGoudy.variable} ${calligraffitti.variable} ${urwBold.variable} ${urwRegular.variable} antialiased`}
+        className={`${sortsMillyGoudy.variable} ${vogue.variable} ${calligraffitti.variable} ${urwBold.variable} ${urwRegular.variable} antialiased`}
       >
         {children}
       </body>

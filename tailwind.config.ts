@@ -15,6 +15,7 @@ export default {
       fontFamily:{
         sorts: ['var(--font-sorts-milly-goudy)', 'serif'],
         calligraffitti: ['var(--font-calligraffitti)', 'cursive'],
+        vogue: ['var(--font-vogue)', 'serif'],
       }
     },
   },
