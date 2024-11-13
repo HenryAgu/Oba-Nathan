@@ -149,7 +149,7 @@ export default function Home() {
 
       {/* Small screen version */}
       <section className="flex flex-col gap-y-2 md:hidden lg:hidden xl:hidden w-full px-2 pb-24">
-        {imageCategories.map((category,index) => (
+        {imageCategories.map((category, index) => (
           <Link href={category.path} key={index}>
             <div
               className={`flex items-center justify-center drop-shadow-md grayscale bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out`}
@@ -177,15 +177,17 @@ export default function Home() {
         </div>
         <div className="basis-[50%] flex flex-col gap-y-4 text-center">
           <p className="font-[calligraffitti] font-bold text-4xl">
-            Hey there! I'm Nathan
+            Hey there! I&apos;m Nathan
           </p>
+
           <h5 className="font-vogue text-base">YOUR FAV PHOTOGRAPHER</h5>
           <p className="font-[sorts] text-base">
-            Capturing life's moments, one frame at a time. Let me tell your
+            Capturing life&apos;s moments, one frame at a time. Let me tell your
             story through the lens, turning the ordinary into the extraordinary.
-            Ready to create something unforgettable? Let's connect and make
+            Ready to create something unforgettable? Let&apos;s connect and make
             magic happen!
           </p>
+
           <Link href="tel:+2349091748665">
             <button className="border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider">
               GET IN TOUCH
