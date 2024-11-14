@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* About Me */}
-      <section className="flex flex-col md:flex-row xl:flex-row items-center gap-y-8 md:gap-x-8 xl:gap-x-8 pb-24 w-full md:11/12 xl:w-4/5 mx-auto">
+      <section className="flex flex-col md:flex-row xl:flex-row items-center gap-y-14 md:gap-x-8 xl:gap-x-8 pb-24 w-full md:11/12 xl:w-4/5 mx-auto">
         <div className="basis-[50%]">
           <Image
             src="/images/me.webp"

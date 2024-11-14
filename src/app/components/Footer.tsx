@@ -5,7 +5,7 @@ import { FaXTwitter, FaFacebook, FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between gap-x-4 w-[95%] mx-auto py-14">
+    <div className="flex justify-between gap-x-4 w-[95%] mx-auto pb-10 xl:pb-14 xl:py-14">
       <h1 className="text-xl font-[sorts] font-black">OBA NATHAN</h1>
       <div className="flex flex-col gap-y-2">
         <div className="flex items-center justify-end gap-x-2">
