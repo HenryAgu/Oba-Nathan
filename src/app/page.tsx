@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "../../components/Footer";
+import Footer from "./components/Footer";
+
 
 export default function Home() {
   const imageCategories = [
@@ -54,7 +55,10 @@ export default function Home() {
               className="grayscale-0"
             />
           </Link>
-          <Link href="https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL">
+          <Link
+            href="https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL"
+            target="_blank"
+          >
             <Image
               src="/images/facebook.png"
               alt="facebook-icon"
@@ -96,7 +100,7 @@ export default function Home() {
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
               <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
-                Portraits
+                Events
               </p>
             </div>
           </Link>
@@ -104,7 +108,7 @@ export default function Home() {
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[650px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
               <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
-                Events
+                Portraits
               </p>
             </div>
           </Link>
@@ -181,7 +185,7 @@ export default function Home() {
           </p>
 
           <h5 className="font-vogue text-base">YOUR FAV PHOTOGRAPHER</h5>
-          <p className="font-[sorts] text-base">
+          <p className="font-[sorts] text-base p-3">
             Capturing life&apos;s moments, one frame at a time. Let me tell your
             story through the lens, turning the ordinary into the extraordinary.
             Ready to create something unforgettable? Let&apos;s connect and make
@@ -195,7 +199,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </main>
   );
 }
