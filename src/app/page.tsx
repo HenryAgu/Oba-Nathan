@@ -189,13 +189,12 @@ export default function Home() {
             className="object-contain aspect-[850/1000] grayscale hover:grayscale-0 transition duration-300 ease-in-out"
           />
         </div>
-        <div className="basis-[50%] flex flex-col gap-y-4 text-center">
-          <p className="font-[calligraffitti] font-bold text-4xl">
-            Hey there! I&apos;m Nathan
+        <div className="basis-[50%] flex flex-col gap-y-4 px-3 text-left">
+          <p className="font-[sorts] font-bold text-5xl leading-[50px]">
+            Hey there! <br /> I&apos;m Nathan
           </p>
 
-          <h5 className="font-vogue text-base">YOUR FAV PHOTOGRAPHER</h5>
-          <p className="font-[sorts] text-base p-3">
+          <p className="font-[sorts] xl:text-base text-sm max-w-[90%] xl:max-w-[430px]">
             Capturing life&apos;s moments, one frame at a time. Let me tell your
             story through the lens, turning the ordinary into the extraordinary.
             Ready to create something unforgettable? Let&apos;s connect and make
