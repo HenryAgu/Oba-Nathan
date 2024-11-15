@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "./components/Footer";
-
+import ImageCarousel from "./components/ImageCarousel";
 
 export default function Home() {
   const imageCategories = [
@@ -36,6 +36,7 @@ export default function Home() {
       path: "",
     },
   ];
+
   return (
     <main className="container mx-auto">
       <header className="flex flex-col gap-y-2 items-center justify-center py-14 pb-24">
@@ -96,7 +97,10 @@ export default function Home() {
       {/* Big screen version */}
       <section className="hidden md:flex xl:flex flex-col gap-y-2 pb-24">
         <div className="flex gap-2">
-          <Link href="" className="md:basis-[60%] xl:basis-[65%] group relative">
+          <Link
+            href=""
+            className="md:basis-[60%] xl:basis-[65%] group relative"
+          >
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[700px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
               <p className="font-vogue uppercase text-xl font-semibold opacity-0 group-hover:opacity-100 tracking-widest text-white">
@@ -104,7 +108,10 @@ export default function Home() {
               </p>
             </div>
           </Link>
-          <Link href="" className="md:basis-[40%] xl:basis-[35%] group relative">
+          <Link
+            href=""
+            className="md:basis-[40%] xl:basis-[35%] group relative"
+          >
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[700px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
               <p className="font-vogue uppercase text-xl font-semibold tracking-widest opacity-0 group-hover:opacity-100 text-white">
@@ -152,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* Small screen version */}
-      <section className="flex flex-col gap-y-2 md:hidden lg:hidden xl:hidden w-full px-2 pb-24">
+      <section className="flex flex-col gap-y-2 md:hidden lg:hidden xl:hidden w-full px-2">
         {imageCategories.map((category, index) => (
           <Link href={category.path} key={index}>
             <div
@@ -168,8 +175,11 @@ export default function Home() {
         ))}
       </section>
 
+      {/* Image Carousel */}
+      <ImageCarousel/>
+
       {/* About Me */}
-      <section className="flex flex-col md:flex-row xl:flex-row items-center gap-y-14 md:gap-x-8 xl:gap-x-8 pb-24 w-full md:11/12 xl:w-4/5 mx-auto">
+      <section className="flex flex-col md:flex-row xl:flex-row items-center gap-y-14 md:gap-x-8 xl:gap-x-8 py-24 w-full md:11/12 xl:w-4/5 mx-auto">
         <div className="basis-[50%]">
           <Image
             src="/images/me.webp"
@@ -199,7 +209,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </main>
   );
 }
