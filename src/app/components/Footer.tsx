@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-[95%] mx-auto pt-7">
-      <div className="flex xl:flex-row justify-between border-[#b0b0b0] border-2 border-t-0 border-x-0 pb-3">
+      <div className="flex xl:flex-row justify-between border-[#989898] border-2 border-t-0 border-x-0 pb-3">
         <h3 className="text-3xl font-vogue font-black">OBA NATHAN</h3>
         <div className="flex items-center justify-start gap-x-3">
           <Link
