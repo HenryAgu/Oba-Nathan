@@ -49,8 +49,20 @@ export default function Home() {
             target="_blank"
           >
             <Image
-              src="/images/x.png"
+              src="/images/x.svg"
               alt="x-icon"
+              width={32}
+              height={32}
+              className="grayscale-0"
+            />
+          </Link>
+          <Link
+            href="https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw"
+            target="_blank"
+          >
+            <Image
+              src="/images/instagram.svg"
+              alt="instagram-icon"
               width={32}
               height={32}
               className="grayscale-0"
@@ -61,7 +73,7 @@ export default function Home() {
             target="_blank"
           >
             <Image
-              src="/images/facebook.png"
+              src="/images/facebook.svg"
               alt="facebook-icon"
               width={32}
               height={32}
@@ -73,19 +85,7 @@ export default function Home() {
             target="_blank"
           >
             <Image
-              src="/images/instagram.png"
-              alt="instagram-icon"
-              width={32}
-              height={32}
-              className="grayscale-0"
-            />
-          </Link>
-          <Link
-            href="https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw"
-            target="_blank"
-          >
-            <Image
-              src="/images/behance.png"
+              src="/images/behance.svg"
               alt="behance-icon"
               width={32}
               height={32}

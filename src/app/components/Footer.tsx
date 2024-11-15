@@ -1,40 +1,63 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaBehanceSquare } from "react-icons/fa";
-import { FaXTwitter, FaFacebook, FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between gap-x-4 w-[95%] mx-auto pb-10 xl:pb-14 xl:py-14">
-      <h1 className="text-xl font-[sorts] font-black">OBA NATHAN</h1>
-      <div className="flex flex-col gap-y-2">
-        <div className="flex items-center justify-end gap-x-2">
+    <div className="w-[95%] mx-auto pt-7">
+      <div className="flex xl:flex-row justify-between border-[#b0b0b0] border-2 border-t-0 border-x-0 pb-3">
+        <h3 className="text-3xl font-vogue font-black">OBA NATHAN</h3>
+        <div className="flex items-center justify-start gap-x-3">
           <Link
             href="https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09"
             target="_blank"
           >
-            <FaXTwitter className="text-xl" />
+            <Image
+              src="/images/x.svg"
+              alt="x-icon"
+              width={20}
+              height={20}
+              className="grayscale-0"
+            />
           </Link>
           <Link
             href="https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL"
             target="_blank"
           >
-            <FaFacebook className="text-xl" />
+            <Image
+              src="/images/instagram.svg"
+              alt="x-icon"
+              width={20}
+              height={20}
+              className="grayscale-0"
+            />
           </Link>
 
           <Link
             href="https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw"
             target="_blank"
           >
-            <FaSquareInstagram className="text-xl" />
+            <Image
+              src="/images/facebook.svg"
+              alt="x-icon"
+              width={20}
+              height={20}
+              className="grayscale-0"
+            />
           </Link>
           <Link href="" target="_blank">
-            <FaBehanceSquare className="text-xl" />
+            <Image
+              src="/images/behance.svg"
+              alt="x-icon"
+              width={20}
+              height={20}
+              className="grayscale-0"
+            />
           </Link>
         </div>
-        <p className="text-base font-[sorts]">
-          Made by <b>Henry Agu</b>
-        </p>
+      </div>
+      <div className="py-3 pb-16 text-center xl:text-left">
+        <p className="text-sm font-[sorts]">Made by <b className="text-[#454545]">Henry Agu</b></p>
       </div>
     </div>
   );
