@@ -8,11 +8,9 @@ const ImageCarousel = () => {
     { id: 4, src: "/images/image.webp", rotate: "12deg" },
     { id: 5, src: "/images/image.webp", rotate: "-15deg" },
     { id: 6, src: "/images/image.webp", rotate: "-5deg" },
-    { id: 7, src: "/images/image.webp", rotate: "12deg" },
-    { id: 8, src: "/images/image.webp", rotate: "-15deg" },
   ];
   return (
-    <div className="flex justify-center items-center pt-20 xl:pt-24 md:py-24 xl:py-24 overflow-x-hidden w-full xl:pl-[20px]">
+    <div className="flex justify-center items-center pt-24 pb-4 xl:pt-24 md:py-24 xl:py-24 overflow-x-hidden w-full xl:pl-[20px]">
       {images.map((image) => (
         <div
           key={image.id}
