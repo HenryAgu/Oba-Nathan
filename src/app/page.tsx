@@ -166,7 +166,6 @@ export default function Home() {
               className={`flex items-center justify-center drop-shadow-md grayscale bg-cover bg-center bg-no-repeat object-fill h-[250px] w-full hover:grayscale-0 transition duration-300 ease-in-out`}
               style={{ backgroundImage: `url(${category.cover})` }}
             >
-              <div className="absolute inset-0 bg-black/30"></div>
               <p className="font-vogue uppercase text-white text-xl font-semibold tracking-widest">
                 {category.title}
               </p>
