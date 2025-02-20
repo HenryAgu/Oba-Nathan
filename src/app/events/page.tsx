@@ -59,7 +59,7 @@ const photoGallery: PhotoGallery[] = [
 
 const EventPage = () => {
   return (
-    <main className="px-4 md:px-14 py-5">
+    <main className="px-5 md:px-14 py-5">
       <div className="flex justify-between items-baseline">
         <h1 className="uppercase font-vogue text-2xl md:text-4xl font-black">oba nathan</h1>
         <Link href="tel:+2349091748665">
@@ -70,7 +70,7 @@ const EventPage = () => {
           </button>
         </Link>
       </div>
-      <div className="my-20 grid grid-cols-1 md:grid-cols-4 gap-x-5 gap-y-10 md:gap-y-20">
+      <div className="my-10 md:my-20 grid grid-cols-1 md:grid-cols-4 gap-x-5 gap-y-10 md:gap-y-20">
         {photoGallery.map((photo, index) => (
           <div className="group flex flex-col gap-y-5" key={index}>
             <Image
