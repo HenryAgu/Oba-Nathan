@@ -91,7 +91,7 @@ const EventPage = () => {
       <div className="my-10">
         <h1 className={`text-5xl font-semibold ${gtSuperDisplay.className} leading-[60px]`}>
           Have a project? <br />
-          Let's do this, <Link href="tel:+2349091748665" className="underline">together!</Link>
+          Let&lsquo;s do this, <Link href="tel:+2349091748665" className="underline">together!</Link>
         </h1>
       </div>
     </main>
