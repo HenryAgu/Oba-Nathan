@@ -1,7 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./components/Footer";
-import ImageCarousel from "./components/ImageCarousel";
+import Footer from "../components/Footer";
+import ImageCarousel from "../components/ImageCarousel";
+import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
+
+
+const gtSuperDisplay = localFont({
+  src: "./fonts/GT-Super-Display-Regular-Trial.otf",
+  variable: "--font-vogue",
+  weight: "100 900",
+})
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: '--font-sorts-milly-goudy',
+})
 
 export default function Home() {
   const imageCategories = [
@@ -13,7 +28,7 @@ export default function Home() {
     {
       title: "Events",
       cover: "/images/image.webp",
-      path: "",
+      path: "/events",
     },
     {
       title: "Headshots",
@@ -98,7 +113,7 @@ export default function Home() {
       <section className="hidden md:flex xl:flex flex-col gap-y-2 pb-24">
         <div className="flex gap-2">
           <Link
-            href=""
+            href="/events"
             className="md:basis-[60%] xl:basis-[65%] basis-full group relative"
           >
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[700px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
@@ -189,11 +204,11 @@ export default function Home() {
           />
         </div>
         <div className="basis-[50%] flex flex-col gap-y-4 px-3 text-left">
-          <p className="font-[sorts] font-bold text-5xl leading-[50px]">
+          <p className={`${gtSuperDisplay.className} font-[sorts] font-bold text-5xl leading-[50px]`}>
             Hey there! <br /> I&apos;m Nathan
           </p>
 
-          <p className="font-[sorts] xl:text-base text-sm max-w-[90%] xl:max-w-[430px]">
+          <p className={`${roboto.className} font-[sorts] xl:text-base text-sm max-w-[90%] xl:max-w-[430px]`}>
             Capturing life&apos;s moments, one frame at a time. Let me tell your
             story through the lens, turning the ordinary into the extraordinary.
             Ready to create something unforgettable? Let&apos;s connect and make
@@ -201,7 +216,7 @@ export default function Home() {
           </p>
 
           <Link href="tel:+2349091748665">
-            <button className="border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider">
+            <button className={`${gtSuperDisplay.className} border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider`}>
               GET IN TOUCH
             </button>
           </Link>
