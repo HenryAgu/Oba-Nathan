@@ -70,6 +70,9 @@ const EventPage = () => {
           </button>
         </Link>
       </div>
+      <div className="mt-20 text-center">
+        <h1 className={`${gtSuperDisplay.className} text-4xl lg:text-7xl`}>Events</h1>
+      </div>
       <div className="my-10 md:my-20 grid grid-cols-1 md:grid-cols-4 gap-x-5 gap-y-10 md:gap-y-20">
         {photoGallery.map((photo, index) => (
           <div className="group flex flex-col gap-y-5" key={index}>
