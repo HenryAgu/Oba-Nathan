@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Sorts_Mill_Goudy, Calligraffitti } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const vogue = localFont({
   src: "./fonts/Vogue.ttf",
@@ -38,6 +39,7 @@ export default function RootLayout({
         className={`${sortsMillyGoudy.variable} ${vogue.variable} ${calligraffitti.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

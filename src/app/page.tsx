@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "../components/Footer";
 import ImageCarousel from "../components/ImageCarousel";
 import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
@@ -222,7 +221,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Footer />
     </main>
   );
 }
