@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sortsMillyGoudy.variable} ${vogue.variable} ${calligraffitti.variable} antialiased`}
+        className={`${sortsMillyGoudy.variable} ${vogue.variable} ${calligraffitti.variable} bg-white antialiased`}
       >
         {children}
         <Footer />
