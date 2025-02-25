@@ -61,7 +61,7 @@ const EventPage = () => {
   return (
     <main className="px-4 md:px-14 py-5">
       <div className="flex justify-between items-baseline">
-        <h1 className="uppercase font-vogue text-2xl md:text-4xl font-black">oba nathan</h1>
+        <Link href="/" className="uppercase font-vogue text-2xl md:text-4xl font-black">oba nathan</Link>
         <Link href="tel:+2349091748665">
           <button
             className={`${gtSuperDisplay.className} border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider`}
