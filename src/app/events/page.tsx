@@ -81,7 +81,7 @@ const EventPage = () => {
               alt="image"
               width={350}
               height={500}
-              className="w-full h-[500px] grayscale-0 group-hover:grayscale transition duration-300 ease-in-out"
+              className="w-full md:h-[450px] grayscale-0 group-hover:grayscale transition duration-300 ease-in-out"
             />
             <p
               className={`text-center text-base text-black ${roboto.className} font-normal`}
