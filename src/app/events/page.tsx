@@ -59,7 +59,7 @@ const photoGallery: PhotoGallery[] = [
 
 const EventPage = () => {
   return (
-    <main className="px-5 md:px-14 py-5">
+    <main className="px-4 md:px-14 py-5">
       <div className="flex justify-between items-baseline">
         <h1 className="uppercase font-vogue text-2xl md:text-4xl font-black">oba nathan</h1>
         <Link href="tel:+2349091748665">
