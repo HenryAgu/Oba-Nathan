@@ -116,8 +116,8 @@ export default function Home() {
             className="md:basis-[60%] xl:basis-[65%] basis-full group relative"
           >
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <div className="absolute inset-0 bg-black/30"></div>
-              <p className="font-vogue uppercase text-xl font-semibold opacity-0 group-hover:opacity-100 tracking-widest text-white">
+              <div className="absolute"></div>
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Events
               </p>
             </div>
