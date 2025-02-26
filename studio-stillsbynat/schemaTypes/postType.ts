@@ -8,6 +8,7 @@ export const postType = defineType({
     defineField({
       name: 'title',
       type: 'string',
+      title: "Title",
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -25,6 +26,7 @@ export const postType = defineType({
     defineField({
       name: 'image',
       type: 'image',
+      title: "Client Image",
     }),
     defineField({
       name: 'body',
