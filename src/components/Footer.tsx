@@ -56,7 +56,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="py-3 pb-16 text-center xl:text-left">
+      <div className="py-3 pb-10 md:pb-16 text-center xl:text-left">
         <p className="text-sm font-[sorts]">Made by <b className="text-[#454545]">Henry Agu</b></p>
       </div>
     </div>
