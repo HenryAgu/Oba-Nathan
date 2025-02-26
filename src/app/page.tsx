@@ -17,39 +17,46 @@ const roboto = Roboto({
   variable: '--font-sorts-milly-goudy',
 })
 
+interface ImageCategories{
+  title: string;
+  cover: string;
+  path: string;
+}
+
+const imageCategories:ImageCategories[] = [
+  {
+    title: "Events",
+    cover: "/images/image.webp",
+    path: "/events",
+  },
+  {
+    title: "Portraits",
+    cover: "/images/image.webp",
+    path: "",
+  },
+  {
+    title: "Headshots",
+    cover: "/images/image.webp",
+    path: "",
+  },
+  {
+    title: "Conferences",
+    cover: "/images/image.webp",
+    path: "",
+  },
+  {
+    title: "lifestyle",
+    cover: "/images/image.webp",
+    path: "",
+  },
+  {
+    title: "Weddings",
+    cover: "/images/image.webp",
+    path: "",
+  },
+];
+
 export default function Home() {
-  const imageCategories = [
-    {
-      title: "Portraits",
-      cover: "/images/image.webp",
-      path: "",
-    },
-    {
-      title: "Events",
-      cover: "/images/image.webp",
-      path: "/events",
-    },
-    {
-      title: "Headshots",
-      cover: "/images/image.webp",
-      path: "",
-    },
-    {
-      title: "Conferences",
-      cover: "/images/image.webp",
-      path: "",
-    },
-    {
-      title: "lifestyle",
-      cover: "/images/image.webp",
-      path: "",
-    },
-    {
-      title: "Weddings",
-      cover: "/images/image.webp",
-      path: "",
-    },
-  ];
 
   return (
     <main className="container mx-auto">
