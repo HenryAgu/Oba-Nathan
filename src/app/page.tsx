@@ -116,7 +116,7 @@ export default function Home() {
             className="md:basis-[60%] xl:basis-[65%] basis-full group relative"
           >
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-              <div className="absolute"></div>
+              <div className="absolute inset-0 bg-black/30"></div>
               <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Events
               </p>
@@ -128,7 +128,7 @@ export default function Home() {
           >
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest opacity-0 group-hover:opacity-100 text-white">
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Portraits
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function Home() {
           <Link href="" className="md:basis-[40%] basis-[35%] group relative">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
-              <p className="font-vogue uppercase text-xl font-semibold opacity-0 group-hover:opacity-100 tracking-widest text-white">
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Headshots
               </p>
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
           <Link href="" className="md:basis-[60%] basis-[65%] group relative">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
-              <p className="font-vogue uppercase text-xl font-semibold opacity-0 group-hover:opacity-100 tracking-widest text-white">
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Conferences
               </p>
             </div>
@@ -156,7 +156,7 @@ export default function Home() {
           <Link href="" className="md:basis-[60%] basis-[65%] group relative">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white opacity-0 group-hover:opacity-100">
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Lifestyle
               </p>
             </div>
@@ -164,7 +164,7 @@ export default function Home() {
           <Link href="" className="md:basis-[40%] basis-[35%] group relative">
             <div className="w-full flex items-center justify-center drop-shadow-md bg-[url('/images/image.webp')] bg-cover bg-center bg-no-repeat object-fill md:h-[450px] xl:h-[500px] grayscale hover:grayscale-0 transition duration-300 ease-in-out">
               <div className="absolute inset-0 bg-black/30"></div>
-              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white opacity-0 group-hover:opacity-100">
+              <p className="font-vogue uppercase text-xl font-semibold tracking-widest text-white">
                 Weddings
               </p>
             </div>
