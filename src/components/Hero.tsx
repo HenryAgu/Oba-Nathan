@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
               alt="Image"
               width={image.width}
               height={image.height}
-              className={`w-[${image.width}px] h-[${image.height}px] aspect-[${image.width}/${image.height}] grayscale-0 group-hover:grayscale transition duration-300 ease-in-out`}
+              className={`w-[320px] h-[180px] aspect-[320/180] md:w-[${image.width}px] md:h-[${image.height}px] md:aspect-[${image.width}/${image.height}] grayscale-0 group-hover:grayscale transition duration-300 ease-in-out`}
             />
           </div>
         ))}
