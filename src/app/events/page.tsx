@@ -25,11 +25,58 @@ const roboto = Roboto({
 
 const photoGallery: PhotoGallery[] = [
   {
-    title: "Marilena+Julius",
+    title: "Marilena & Julius",
     image: "/images/image.webp",
-    link: "Marilena+Julius",
+    link: "Marilena & Julius",
+  },
+  {
+    title: "Sophia & Daniel",
+    image: "/images/image.webp",
+    link: "Sophia & Daniel",
+  },
+  {
+    title: "Olivia & James",
+    image: "/images/image.webp",
+    link: "Olivia & James",
+  },
+  {
+    title: "Emma & Michael",
+    image: "/images/image.webp",
+    link: "Emma & Michael",
+  },
+  {
+    title: "Isabella & William",
+    image: "/images/image.webp",
+    link: "Isabella & William",
+  },
+  {
+    title: "Ava & Benjamin",
+    image: "/images/image.webp",
+    link: "Ava & Benjamin",
+  },
+  {
+    title: "Mia & Alexander",
+    image: "/images/image.webp",
+    link: "Mia & Alexander",
+  },
+  {
+    title: "Charlotte & Henry",
+    image: "/images/image.webp",
+    link: "Charlotte & Henry",
+  },
+  {
+    title: "Amelia & Lucas",
+    image: "/images/image.webp",
+    link: "Amelia & Lucas",
+  },
+  {
+    title: "Harper & Ethan",
+    image: "/images/image.webp",
+    link: "Harper & Ethan",
   },
 ];
+
+
 
 const EventPage = () => {
   return (

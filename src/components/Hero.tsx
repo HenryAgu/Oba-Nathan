@@ -1,3 +1,4 @@
+import localFont from "next/font/local";
 import Image from "next/image";
 import React from "react";
 
@@ -12,33 +13,39 @@ interface HeroProps {
   id: string;
 }
 
+const gtSuperDisplay = localFont({
+  src: "../app/fonts/GT-Super-Display-Regular-Trial.otf",
+  variable: "--font-vogue",
+  weight: "100 900",
+});
+
 const heroImages: HeroImages[] = [
   {
-    path: "/images/image.webp",
+    path: "/images/5.jpg",
     top: 0,
     width: 130,
     height: 196,
   },
   {
-    path: "/images/image.webp",
+    path: "/images/4.jpg",
     top: 320,
     width: 197,
     height: 295,
   },
   {
-    path: "/images/image.webp",
+    path: "/images/3.jpg",
     top: 100,
     width: 200,
     height: 299,
   },
   {
-    path: "/images/image.webp",
+    path: "/images/2.jpg",
     top: 400,
     width: 200,
     height: 299,
   },
   {
-    path: "/images/image.webp",
+    path: "/images/IMG_9597.jpg",
     top: 208,
     width: 210,
     height: 315,
@@ -48,9 +55,13 @@ const heroImages: HeroImages[] = [
 const Hero: React.FC<HeroProps> = ({ id }) => {
   return (
     <main>
-      <div className="px-4 md:px-16 flex justify-between relative h-screen">
+      <div className="px-4 lg:px-8 xl:px-16 flex justify-between relative h-screen">
         {heroImages.map((image, index) => (
-          <div key={index} className="relative" style={{ top: `${image.top}px` }}>
+          <div
+            key={index}
+            className="relative"
+            style={{ top: `${image.top}px` }}
+          >
             <Image
               src={image.path}
               alt="Image"
@@ -61,10 +72,15 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           </div>
         ))}
       </div>
-      <h1>{id} try</h1>
+      <div className="relative mt-[-180px]">
+        <h1
+          className={`${gtSuperDisplay.className} lg:text-[120px] xl:text-[160px] lg:leading-[120px] xl:leading-[150px] uppercase font-medium text-center`}
+        >
+          {id.replace(/%20%26%20/g, " & ")}
+        </h1>
+      </div>
     </main>
   );
 };
-
 
 export default Hero;
