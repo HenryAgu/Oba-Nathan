@@ -74,7 +74,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
       </div>
       <div className="relative mt-[-180px]">
         <h1
-          className={`${gtSuperDisplay.className} lg:text-[120px] xl:text-[160px] lg:leading-[120px] xl:leading-[150px] uppercase font-medium text-center`}
+          className={`${gtSuperDisplay.className} text-4xl lg:text-[120px] xl:text-[160px] lg:leading-[120px] xl:leading-[150px] uppercase font-medium text-center`}
         >
           {id.replace(/%20%26%20/g, " & ")}
         </h1>
