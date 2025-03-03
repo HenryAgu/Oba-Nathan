@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Sorts_Mill_Goudy, Calligraffitti } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "@/components/shared/Footer";
 
 const vogue = localFont({
   src: "./fonts/Vogue.ttf",
