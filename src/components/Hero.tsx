@@ -73,26 +73,26 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
         ))}
       </div>
       <div className="flex flex-col lg:hidden h-screen px-4">
-        <div className="ml-14">
+        <div className="ml-0">
           <Image
             src="/images/1.jpg"
             alt="image"
-            width={75}
-            height={120}
-            className="w-[75px] h-[120px]"
+            width={140}
+            height={210}
+            className="w-[140px] h-[210px]"
           />
         </div>
-        <div className="flex items-end justify-end mr-24">
+        <div className="flex items-end justify-end relative bottom-20 mr-24">
           <Image
             src="/images/2.jpg"
             alt="image"
-            width={98}
-            height={146}
-            className="w-[98px] h-[146px]"
+            width={140}
+            height={210}
+            className="w-[140px] h-[210px]"
           />
         </div>
 
-        <div className="flex gap-x-2 items-end justify-end mr-32 mt-20">
+        <div className="flex gap-x-2 items-end justify-end mr-48 relative bottom-10">
           <Image
             src="/images/3.jpg"
             alt="image"
@@ -102,17 +102,17 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           />
         </div>
 
-        <div className="flex items-end justify-end mr-14 mt-20">
+        <div className="flex items-end justify-end mr-10 relative  bottom-40">
           <Image
             src="/images/4.jpg"
             alt="image"
-            width={121}
-            height={181}
-            className="w-[121px] h-[181px]"
+            width={140}
+            height={210}
+            className="w-[140px] h-[210px]"
           />
         </div>
       </div>
-      <div className="relative mt-[-150px] xl:mt-[-180px]">
+      <div className="relative mt-10 xl:mt-[-180px]">
         <h1
           className={`${gtSuperDisplay.className} text-4xl lg:text-[120px] xl:text-[160px] lg:leading-[120px] xl:leading-[150px] uppercase font-medium text-center`}
         >
