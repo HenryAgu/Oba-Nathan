@@ -9,8 +9,6 @@ interface HeroImages {
   height: number;
 }
 
-interface HeroSmallImages {}
-
 interface HeroProps {
   id: string;
 }
