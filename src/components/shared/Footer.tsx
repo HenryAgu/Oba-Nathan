@@ -14,22 +14,22 @@ interface SocialMedia {
 const socialMedia: SocialMedia[] = [
   {
     title: "Instagram",
-    icon: <InstagramIcon size={24} />,
+    icon: <InstagramIcon size={26} />,
     path: "https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw",
   },
   {
     title: "x",
-    icon: <XIcon size={15} />,
+    icon: <XIcon size={18} />,
     path: "https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09",
   },
   {
     title: "Facebook",
-    icon: <FacebookIcon size={24} />,
+    icon: <FacebookIcon size={26} />,
     path: "https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL",
   },
   {
     title: "Instagram",
-    icon: <BehanceIcon size={24} />,
+    icon: <BehanceIcon size={22} />,
     path: "https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09",
   },
 ];

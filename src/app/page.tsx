@@ -40,17 +40,17 @@ const socialMedia: SocialMedia[] = [
   },
   {
     title: "x",
-    icon: <XIcon size={32} />,
+    icon: <XIcon size={28} />,
     path: "https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09",
   },
   {
     title: "Facebook",
-    icon: <FacebookIcon size={45} />,
+    icon: <FacebookIcon size={40} />,
     path: "https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL",
   },
   {
     title: "Instagram",
-    icon: <BehanceIcon size={45} />,
+    icon: <BehanceIcon size={35} />,
     path: "https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09",
   },
 ];
