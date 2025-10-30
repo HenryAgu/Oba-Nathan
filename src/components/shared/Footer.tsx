@@ -41,10 +41,11 @@ const Footer = () => {
       <div className="flex xl:flex-row justify-between border-[#989898] border-2 border-t-0 border-x-0 pb-3">
         <h3 className="text-3xl font-vogue font-black">OBA NATHAN</h3>
         <div className="flex items-center justify-start gap-x-3">
-          {socialMedia.map((item) => (
+          {socialMedia.map((item,index) => (
             <Link
               href="https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09"
               target="_blank"
+              key={index}
             >
               {item.icon}
             </Link>
