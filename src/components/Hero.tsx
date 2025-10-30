@@ -112,7 +112,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           />
         </div>
       </div>
-      <div className="relative mt-10 xl:mt-[-180px]">
+      <div className="relative mt-10 pxl:mt-[-180px]">
         <h1
           className={`${gtSuperDisplay.className} text-4xl lg:text-[120px] xl:text-[160px] lg:leading-[120px] xl:leading-[150px] uppercase font-medium text-center`}
         >

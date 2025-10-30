@@ -3,27 +3,59 @@ import Link from "next/link";
 import ImageCarousel from "../components/ImageCarousel";
 import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
-
+import InstagramIcon from "@/components/icons/instagram";
+import FacebookIcon from "@/components/icons/facebook";
+import XIcon from "@/components/icons/x";
+import BehanceIcon from "@/components/icons/behance";
 
 const gtSuperDisplay = localFont({
   src: "./fonts/GT-Super-Display-Regular-Trial.otf",
   variable: "--font-vogue",
   weight: "100 900",
-})
+});
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400"],
-  variable: '--font-sorts-milly-goudy',
-})
+  variable: "--font-sorts-milly-goudy",
+});
 
-interface ImageCategories{
+interface ImageCategories {
   title: string;
   cover: string;
   path: string;
 }
 
-const imageCategories:ImageCategories[] = [
+interface SocialMedia {
+  title: string;
+  icon: React.ReactNode;
+  path: string;
+}
+
+const socialMedia: SocialMedia[] = [
+  {
+    title: "Instagram",
+    icon: <InstagramIcon size={45} />,
+    path: "https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw",
+  },
+  {
+    title: "x",
+    icon: <XIcon size={32} />,
+    path: "https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09",
+  },
+  {
+    title: "Facebook",
+    icon: <FacebookIcon size={45} />,
+    path: "https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL",
+  },
+  {
+    title: "Instagram",
+    icon: <BehanceIcon size={45} />,
+    path: "https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09",
+  },
+];
+
+const imageCategories: ImageCategories[] = [
   {
     title: "Events",
     cover: "/images/image.webp",
@@ -57,7 +89,6 @@ const imageCategories:ImageCategories[] = [
 ];
 
 export default function Home() {
-
   return (
     <main className="container mx-auto">
       <header className="flex flex-col gap-y-2 items-center justify-center py-14 pb-24">
@@ -65,54 +96,17 @@ export default function Home() {
           oba nathan
         </h1>
         <div className="flex items-center gap-x-4">
-          <Link
-            href="https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09"
-            target="_blank"
-          >
-            <Image
-              src="/images/x.svg"
-              alt="x-icon"
-              width={32}
-              height={32}
-              className="grayscale-0"
-            />
-          </Link>
-          <Link
-            href="https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw"
-            target="_blank"
-          >
-            <Image
-              src="/images/instagram.svg"
-              alt="instagram-icon"
-              width={32}
-              height={32}
-              className="grayscale-0"
-            />
-          </Link>
-          <Link
-            href="https://www.facebook.com/reno.jnr.008?mibextid=ZbWKwL"
-            target="_blank"
-          >
-            <Image
-              src="/images/facebook.svg"
-              alt="facebook-icon"
-              width={32}
-              height={32}
-              className="grayscale-0"
-            />
-          </Link>
-          <Link
-            href="https://www.instagram.com/oba_nathan?igsh=MTVsNms3Ync0MTcw"
-            target="_blank"
-          >
-            <Image
-              src="/images/behance.svg"
-              alt="behance-icon"
-              width={32}
-              height={32}
-              className="grayscale-0"
-            />
-          </Link>
+          {socialMedia.map((item, index) => (
+            <Link
+              href="https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09"
+              target="_blank"
+              key={index}
+            >
+              <span className="h-2 w-2">
+                {item.icon}
+              </span>
+            </Link>
+          ))}
         </div>
       </header>
       {/* Big screen version */}
@@ -196,7 +190,7 @@ export default function Home() {
       </section>
 
       {/* Image Carousel */}
-      <ImageCarousel/>
+      <ImageCarousel />
 
       {/* About Me */}
       <section className="flex flex-col md:flex-row xl:flex-row items-center gap-y-14 md:gap-x-8 xl:gap-x-8 py-24 w-full md:11/12 xl:w-4/5 mx-auto">
@@ -210,11 +204,15 @@ export default function Home() {
           />
         </div>
         <div className="basis-[50%] flex flex-col gap-y-4 px-3 text-left">
-          <p className={`${gtSuperDisplay.className} font-[sorts] font-bold text-5xl leading-[50px]`}>
+          <p
+            className={`${gtSuperDisplay.className} font-[sorts] font-bold text-5xl leading-[50px]`}
+          >
             Hey there! <br /> I&apos;m Nathan
           </p>
 
-          <p className={`${roboto.className} font-[sorts] xl:text-base text-sm max-w-[90%] xl:max-w-[430px]`}>
+          <p
+            className={`${roboto.className} font-[sorts] xl:text-base text-sm max-w-[90%] xl:max-w-[430px]`}
+          >
             Capturing life&apos;s moments, one frame at a time. Let me tell your
             story through the lens, turning the ordinary into the extraordinary.
             Ready to create something unforgettable? Let&apos;s connect and make
@@ -222,7 +220,9 @@ export default function Home() {
           </p>
 
           <Link href="tel:+2349091748665">
-            <button className={`${gtSuperDisplay.className} border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider`}>
+            <button
+              className={`${gtSuperDisplay.className} border-2 font-[sorts] mt-5 border-black w-fit mx-auto text-center py-3 px-5 text-xs hover:bg-black hover:text-white  transition duration-300 ease-in-out tracking-wider`}
+            >
               GET IN TOUCH
             </button>
           </Link>
