@@ -1,5 +1,5 @@
 "use client";
-import Hero from "@/components/Hero";
+import Hero from "@/components/shared/hero";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +28,7 @@ const ProductPage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -50,13 +50,13 @@ const ProductPage = () => {
           honest look. Looking for the beauty in things that we usually pass by
         </p>
         <div className="flex justify-center items-center">
-        <Image
-        src={images[currentIndex]}
-        alt="image"
-        width={900}
-        height={1190}
-        className="xl:aspect-[917/1190] lg:aspect-[1024/1328] w-full lg:w-full xl:w-[900px] lg:h-[1328px] xl:h-[1190px] transition-opacity duration-500"
-      />
+          <Image
+            src={images[currentIndex]}
+            alt="image"
+            width={900}
+            height={1190}
+            className="xl:aspect-[917/1190] lg:aspect-[1024/1328] w-full lg:w-full xl:w-[900px] lg:h-[1328px] xl:h-[1190px] transition-opacity duration-500"
+          />
         </div>
       </div>
       <div className="flex justify-end mr-5 md:mr-10">

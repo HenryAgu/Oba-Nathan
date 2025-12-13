@@ -36,11 +36,11 @@ const socialMedia: SocialMedia[] = [
 
 const Footer = () => {
   return (
-    <div className="w-[95%] mx-auto pt-7">
+    <footer className="px-4 pt-7  container mx-auto">
       <div className="flex xl:flex-row justify-between border-[#989898] border-2 border-t-0 border-x-0 pb-3">
         <h3 className="text-3xl font-vogue font-black">OBA NATHAN</h3>
         <div className="flex items-center justify-start gap-x-3">
-          {socialMedia.map((item,index) => (
+          {socialMedia.map((item, index) => (
             <Link
               href="https://x.com/Oba__Nathan?t=GblSQE7bfeLs3f3i9mrLPQ&s=09"
               target="_blank"
@@ -53,10 +53,17 @@ const Footer = () => {
       </div>
       <div className="py-3 pb-10 md:pb-16 text-center xl:text-left">
         <p className="text-sm font-[sorts]">
-          Made by <b className="text-[#454545]">Henry Agu</b>
+          Made by{" "}
+          <Link
+            target="_blank"
+            href="https://henry-agu.vercel.app/"
+            className="text-[#454545] font-bold"
+          >
+            Henry Agu
+          </Link>
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

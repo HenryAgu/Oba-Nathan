@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ImageCarousel from "../components/ImageCarousel";
+import ImageCarousel from "../components/shared/ImageCarousel";
 import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import InstagramIcon from "@/components/icons/instagram";
