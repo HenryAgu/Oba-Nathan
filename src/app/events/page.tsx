@@ -6,7 +6,7 @@ import EventDetails from "@/components/shared/event-details";
 
 const EventPage = () => {
   return (
-    <main className="px-4 lg:px-0 py-5">
+    <main className="lg:px-0 py-5">
       <Header />
       <div className="flex flex-col my-10">
         <Hero title="events" image="/images/image.webp" />

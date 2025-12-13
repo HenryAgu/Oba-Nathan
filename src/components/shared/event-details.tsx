@@ -1,6 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import EventWriteup from "./event-writeup";
+import ImageGrid from "./image-grid";
+import ThreeColumnImageGrid from "./three-column-image-grid";
 
 const EventDetails = () => {
   return (
@@ -19,76 +20,24 @@ const EventDetails = () => {
           feeling of the moment timeless images that you can revisit and share
           for years to come."
       />
-      <div className="flex">
-        <div className="basis-[50%] flex flex-col h-full">
-          <div className="flex">
-            <div className="basis-[50%]">
-              <Image
-                src="/images/image.webp"
-                alt="image"
-                width={500}
-                height={250}
-                className="w-full h-[285px] object-cover"
-              />
-            </div>
-            <div className="basis-[50%]">
-              <Image
-                src="/images/image.webp"
-                alt="image"
-                width={500}
-                height={250}
-                className="w-full h-[285px] object-cover"
-              />
-            </div>
-          </div>
-          <Image
-            src="/images/image.webp"
-            alt="image"
-            width={500}
-            height={500}
-            className="w-full h-[571px] object-cover"
-          />
-        </div>
-        <div className="basis-[50%] flex flex-col h-full">
-          <Image
-            src="/images/image.webp"
-            alt="image"
-            width={500}
-            height={500}
-            className="w-full h-[428px] object-cover"
-          />
-          <Image
-            src="/images/image.webp"
-            alt="image"
-            width={500}
-            height={500}
-            className="w-full h-[428px] object-cover"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-3">
-        <Image
-          src="/images/image.webp"
-          alt="image"
-          width={500}
-          height={500}
-          className="w-full h-[571px] object-cover"
-        />
-        <Image
-          src="/images/image.webp"
-          alt="image"
-          width={500}
-          height={500}
-          className="w-full h-[571px] object-cover"
-        />
-        <Image
-          src="/images/image.webp"
-          alt="image"
-          width={500}
-          height={500}
-          className="w-full h-[571px] object-cover"
-        />
-      </div>
+      <ImageGrid
+        leftTopImages={[
+          { src: "/images/image.webp" },
+          { src: "/images/image.webp" },
+        ]}
+        leftBottomImage={{ src: "/images/image.webp" }}
+        rightImages={[
+          { src: "/images/image.webp" },
+          { src: "/images/image.webp" },
+        ]}
+      />
+      <ThreeColumnImageGrid
+        images={[
+          { src: "/images/image.webp" },
+          { src: "/images/image.webp" },
+          { src: "/images/image.webp" },
+        ]}
+      />
     </div>
   );
 };

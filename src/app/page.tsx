@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import ImageCarousel from "../components/shared/ImageCarousel";
 import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 import InstagramIcon from "@/components/icons/instagram";
 import FacebookIcon from "@/components/icons/facebook";
 import XIcon from "@/components/icons/x";
 import BehanceIcon from "@/components/icons/behance";
+import ImageCarousel from "@/components/ImageCarousel";
 
 const gtSuperDisplay = localFont({
   src: "./fonts/GT-Super-Display-Regular-Trial.otf",
