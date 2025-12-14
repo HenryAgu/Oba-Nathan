@@ -3,7 +3,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
-<section className="flex flex-col items-center my-24 text-center">
+<section className="flex flex-col items-center my-12 lg:my-24 text-center">
   <span className="text-lg lg:text-[22px] font-normal leading-none">
     Still confused. then,
   </span>
@@ -13,7 +13,7 @@ const Banner = () => {
   </Link>
 
   <span className="text-lg lg:text-[22px] font-normal leading-20 mt-3">
-    or send an email to
+    or send an email to{" "}
     <Link href="" className="underline">
       hello@thecssagency.com
     </Link>

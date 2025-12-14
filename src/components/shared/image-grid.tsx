@@ -12,7 +12,7 @@ export default function ImageGrid({
   rightImages,
 }: ImageGridProps) {
   return (
-    <div className="flex">
+    <div className="flex lg:flex-row flex-col">
       {/* Left Section */}
       <div className="basis-[50%] flex flex-col h-full">
         <div className="flex">
@@ -39,7 +39,7 @@ export default function ImageGrid({
       </div>
 
       {/* Right Section */}
-      <div className="basis-[50%] flex flex-col h-full">
+      <div className="basis-[50%] hidden lg:flex flex-col h-full">
         {rightImages.map((image, index) => (
           <Image
             key={index}

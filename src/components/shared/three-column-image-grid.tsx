@@ -12,7 +12,7 @@ const ThreeColumnImageGrid = ({
   images,
 }: ThreeColumnImageGridProps) => {
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-2 lg:grid-cols-4">
       {images.map((image, index) => (
         <Image
           key={index}
@@ -20,7 +20,7 @@ const ThreeColumnImageGrid = ({
           alt={image.alt || "image"}
           width={500}
           height={500}
-          className="w-full h-[571px] object-cover"
+          className="w-full h-[309px] lg:h-[571px] object-cover"
         />
       ))}
     </div>

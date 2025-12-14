@@ -36,6 +36,7 @@ const EventDetails = () => {
           { src: "/images/image.webp" },
           { src: "/images/image.webp" },
           { src: "/images/image.webp" },
+          { src: "/images/image.webp" },
         ]}
       />
     </div>
